@@ -1,5 +1,5 @@
 basic.forever(function () {
-    if (input.lightLevel() > 105) {
+    if (input.lightLevel() > 150) {
         basic.showLeds(`
             # # # # #
             # # # # #
@@ -12,7 +12,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (input.soundLevel() > 60) {
+    if (input.soundLevel() > 50) {
         music.playTone(523, music.beat(BeatFraction.Breve))
         basic.pause(1000)
         music.stopAllSounds()
